@@ -7,8 +7,8 @@
 <meta name="keywords" content="Clean Login Form Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
 
 <!-- css files -->
-<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" media="all">
-<link href="{{ asset('css/loginstyle.css') }}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ asset('public/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" media="all">
+<link href="{{ asset('public/css/loginstyle.css') }}" rel="stylesheet" type="text/css" media="all" />
 <!-- /css files -->
 
 <!-- online fonts -->
@@ -40,12 +40,12 @@
 								<p class="p-bottom-w3ls"><a class href="#">忘記密碼</a></p>
 								<div class="clear"></div>
 								<div class="submit-w3l">
-									<input type="submit" value="Login">
+									<input type="button" value="登入">
 								</div>
 							</form>
 							<div class="social w3layouts">
 								<div class="heading">
-									<h5>Or Login with</h5>
+									<h5>tomtopchang</h5>
 									<div class="clear"></div>
 								</div>
 								<div class="clear"></div>
@@ -54,7 +54,7 @@
 				<!--//form-ends-here-->
 				</div><!-- copyright -->
 					<div class="copyright w3-agile">
-						<p> © 2017 Clean Login Form . All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+						<p> © 2024 github laravel <a href="https://github.com/tomtopchang/larproinform" target="_blank">larproinform</a></p>
 					</div>
 					<!-- //copyright --> 
         </div>

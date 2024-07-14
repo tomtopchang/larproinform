@@ -193,7 +193,7 @@ form {
     background: transparent;
 	font-family: 'Sirin Stencil', cursive;
 }
-input[type="submit"] {
+input[type="button"] {
     background: #fff;
     color: #000;
     outline: none;
