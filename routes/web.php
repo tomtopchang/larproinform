@@ -22,3 +22,6 @@ Route::get('/', function () {
 });
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AdminController::class, 'login']);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});

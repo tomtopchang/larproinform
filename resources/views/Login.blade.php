@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Clean Login Form a Flat Responsive Widget Template :: w3layouts</title>
+<title>資訊系統登入後臺</title>
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -100,7 +100,7 @@
   						showConfirmButton: false,
   						timer: 1500
 					});
-					//location.reload();
+					window.location.href='/larproinform/dashboard';
 				}else {
 					Swal.fire({
   						icon: "error",
@@ -108,9 +108,6 @@
   						text: response.error
 					});
 				}
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-
 			}
 		});
 	});
