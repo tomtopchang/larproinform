@@ -25,11 +25,9 @@ Route::get('/', function () {
 });
 Route::get('/login', [AdminController::class, 'index'])->name('login');
 Route::post('/login', [AdminController::class, 'login']);
-/*Route::get('/dashboard', function () {
-    return view('dashboard');
-});*/
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/backstage/manager', [ManagerController::class, 'index']);
+Route::get('/backstage/manager/view/{id}', [ManagerController::class, 'View']);
 Route::get('/demo', function () {
     return view('demo');
 });

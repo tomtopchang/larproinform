@@ -31,7 +31,7 @@ class PeruserSeeder extends Seeder
             'name' => '人事',
             'email' => 'per@gmail.com',
             'role' => '1',
-            'unit' => 'per',
+            'unit' => '人事室',
             'created_at' => now(),
         ],
         [
@@ -40,7 +40,7 @@ class PeruserSeeder extends Seeder
             'name' => '業務一組組長',
             'email' => 'bu001@gmail.com',
             'role' => '3',            
-            'unit' => 'bus1',
+            'unit' => '業務一組',
             'created_at' => now(),
         ],
         [
@@ -49,7 +49,7 @@ class PeruserSeeder extends Seeder
             'name' => '業務一組組員',
             'email' => 'bu002@gmail.com',
             'role' => '4',            
-            'unit' => 'bus1',
+            'unit' => '業務一組',
             'created_at' => now(),
         ],
         [
@@ -58,7 +58,7 @@ class PeruserSeeder extends Seeder
             'name' => '業務二組組長',
             'email' => 'bu123@gmail.com',
             'role' => '3',            
-            'unit' => 'bus2',
+            'unit' => '業務二組',
             'created_at' => now(),
         ],
         [
@@ -67,7 +67,7 @@ class PeruserSeeder extends Seeder
             'name' => '業務二組組員',
             'email' => 'bu456@gmail.com',
             'role' => '4',            
-            'unit' => 'bus2',
+            'unit' => '業務二組',
             'created_at' => now(),
         ]
     ]);
