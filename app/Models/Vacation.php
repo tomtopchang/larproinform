@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Peruser extends Model
+class Vacation extends Model
 {
     public $timestamps = false;
-    protected $table = 'peruser';
+    protected $table = 'vacation';
     protected $fillable = [
-        'account', 'password','name','email','created_at','edit_at','last_login'
+        'pno', 'cname','vtype','vsday','veday','sumday','sumhour',
+        'reason','memo','depcheck','deptime','peocheck','peotime'
     ];
 }

@@ -8,8 +8,8 @@
 <meta name="keywords" content="Clean Login Form Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
 
 <!-- css files -->
-<link href="{{ asset('public/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" media="all">
-<link href="{{ asset('public/css/loginstyle.css') }}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ asset('public/backstage/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" media="all">
+<link href="{{ asset('public/backstage/css/loginstyle.css') }}" rel="stylesheet" type="text/css" media="all" />
 <!-- /css files -->
 
 <!-- online fonts -->

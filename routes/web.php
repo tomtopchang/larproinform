@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\backstage\ManagerController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +23,13 @@ use App\Http\Controllers\AdminController;
 Route::get('/', function () {
     return view('Login');
 });
-Route::get('/login', [AdminController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [AdminController::class, 'index'])->name('login');
 Route::post('/login', [AdminController::class, 'login']);
-Route::get('/dashboard', function () {
+/*Route::get('/dashboard', function () {
     return view('dashboard');
+});*/
+Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/backstage/manager', [ManagerController::class, 'index']);
+Route::get('/demo', function () {
+    return view('demo');
 });
