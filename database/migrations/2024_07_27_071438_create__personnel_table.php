@@ -18,7 +18,7 @@ class CreatePersonnelTable extends Migration
             $table->string('pno',20);  //員編
             $table->string('cname',50); //姓名
             $table->string('idno',50); //身分證號碼
-            $table->timestamp('birsday')->nullable(); //生日
+            $table->date('birsday')->nullable(); //生日
             $table->string('sex',2)->nullable(); //性別
             $table->string('address',100)->nullable(); //地址
             $table->string('tel',20)->nullable(); //電話

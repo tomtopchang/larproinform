@@ -1,203 +1,91 @@
 @extends('header')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 @section('header')
 @endsection
 @section('content')
     <h5>人員基本資料檢視明細</h5><br>
     <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-lg-6">
-                    <form role="form">
+        <form role="form">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">                    
                         <div class="form-group">
                             <label>員工編號</label>
-                            <input class="form-control" id="" type="text" placeholder="Disabled input" value="{{ $info[0]['pno'] }}" disabled="">
+                            <input class="form-control" id="pno" type="text" placeholder="" value="{{ $info[0]['pno'] }}" disabled="">
                         </div>
                         <div class="form-group">
-                            <label>姓名</label>
-                            <input class="form-control" id="" type="text" placeholder="Disabled input" value="{{ $info[0]['cname'] }}" disabled="">
+                            <label>身分證字號</label>
+                            <input class="form-control" id="idno" type="text" placeholder="" value="{{ $info[0]['idno'] }}" disabled="">
                         </div>
-                                        <div class="form-group">
-                                            <label>Text Input with Placeholder</label>
-                                            <input class="form-control" placeholder="Enter text">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Static Control</label>
-                                            <p class="form-control-static">email@example.com</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>File input</label>
-                                            <input type="file">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Text area</label>
-                                            <textarea class="form-control" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Checkboxes</label>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 1
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 2
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 3
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Inline Checkboxes</label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">1
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">2
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">3
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Radio Buttons</label>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Radio 1
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Inline Radio Buttons</label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">1
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Selects</label>
-                                            <select class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Multiple Selects</label>
-                                            <select multiple="" class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
-                                    </form>
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label>姓名</label>
-                                        <input class="form-control" id="" type="text" placeholder="Disabled input" value="{{ $info[0]['cname'] }}" disabled="">
-                                    </div>
-                                    <h4>Disabled Form States</h4>
-                                    <form role="form">
-                                        <fieldset disabled="">
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled input</label>
-                                                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled select menu</label>
-                                                <select id="disabledSelect" class="form-control">
-                                                    <option>Disabled select</option>
-                                                </select>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox">Disabled Checkbox
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Disabled Button</button>
-                                        </fieldset>
-                                    </form>
-                                    <h4>Form Validation States</h4>
-                                    <form role="form">
-                                        <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Input with success</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
-                                        </div>
-                                        <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">Input with warning</label>
-                                            <input type="text" class="form-control" id="inputWarning">
-                                        </div>
-                                        <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">Input with error</label>
-                                            <input type="text" class="form-control" id="inputError">
-                                        </div>
-                                    </form>
-                                    <h4>Input Groups</h4>
-                                    <form role="form">
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">@</span>
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-eur"></i>
-                                            </span>
-                                            <input type="text" class="form-control" placeholder="Font Awesome Icon">
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-                            </div>
-                            <!-- /.row (nested) -->
+                        <div class="form-group">
+                            <label for="disabledSelect">性別</label>
+                                <select id="sex" class="form-control" disabled="">
+                                    <option  value=""> </option>
+                                    @foreach ($sexlist as $key => $value) 
+                                        @if ($value == $info[0]['sex'] )  
+                                            <option value="{{ $value }}" selected >{{ $key }} </option>
+                                        @else
+                                            <option value="{{ $value }}" >{{ $key }} </option>
+                                        @endif
+                                    @endforeach  
+                                </select>
                         </div>
-                        <!-- /.panel-body -->
+                        <div class="form-group">
+                            <label>電話</label>
+                            <input class="form-control" id="tel" type="text" placeholder="" value="{{ $info[0]['tel'] }}" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label>職稱</label>
+                            <input class="form-control" id="jobname" type="text" placeholder="" value="{{ $info[0]['jobname'] }}" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label>離職日</label>
+                             <input class="form-control datepicker" id="outday" type="text" placeholder="" value="{{ $info[0]['outday'] }}" disabled="">
+                        </div>                           
                     </div>
-                    <!-- /.panel -->
+                    <!-- /.col-lg-6 (nested) -->
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input class="form-control" id="cname" type="text" placeholder="" value="{{ $info[0]['cname'] }}" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label>出生日期</label>
+                            <input class="form-control datepicker" id="birsday" type="text" placeholder="" value="{{ $info[0]['birsday'] }}" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label>地址</label>
+                            <input class="form-control" id="address" type="text" placeholder="" value="{{ $info[0]['address'] }}" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label>單位</label>
+                            <input class="form-control" id="depname" type="text" placeholder="" value="{{ $info[0]['depname'] }}" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label>到職日</label>
+                        <input class="form-control datepicker" id="inday" type="text" placeholder="" value="{{ $info[0]['inday'] }}" disabled="">
+                        </div>                         
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                </div>
+                <!-- /.row (nested) -->
+                <div class="row">
+                    <div class="col-lg-1">
+                    <a href="{{ url('/backstage/manager') }}" class="btn btn-sm btn-success width-60 m-r-2"> 返回</a>
+                    </div>               
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </form>
+    </div>
+    <!-- /.panel -->
 
 
 @endsection
 
 @section('footer')
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script>
+  $('.datepicker').datepicker();
+</script>
 @endsection

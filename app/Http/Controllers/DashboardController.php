@@ -16,7 +16,7 @@ class DashboardController extends Controller
             $date['Memnu'] = $basic->Permissions();
             return view('dashboard',$date);
         }else{
-            return view('Login',);
+            return view('Login');
         }
         
     }
