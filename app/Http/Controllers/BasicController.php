@@ -20,7 +20,8 @@ class BasicController extends Controller
                     $menuItems[] = Memnusidebar::where('id',trim($i))->get();                
                 }
             }else{
-                $userrolel = explode(',',$userrole->role);
+                $userrolel = explode(',',$userrole[0]->role);               
+
                 foreach ($userrolel as $k){                
                     $menuItems[] = Memnusidebar::where('id',trim($k))->get();               
                 }

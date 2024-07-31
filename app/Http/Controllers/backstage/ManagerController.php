@@ -18,8 +18,8 @@ class ManagerController extends Controller
             $date['Memnu'] = $basic->Permissions();
             if (session('role') <= 2) {
                 $date['info'] = Personnel::all();
-            }else{
-                $date['info'] = Personnel::where('depname', session('unit'))->get();
+            }else {
+                $date['info'] = Personnel::where('pno', session('user_id'))->get();
             }        
 
             return view('/Manager/Manager_Index',$date);
