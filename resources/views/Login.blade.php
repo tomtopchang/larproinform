@@ -100,7 +100,7 @@
   						showConfirmButton: false,
   						timer: 1500
 					});
-					window.location.href='/larproinform/dashboard';
+					window.location.href='/dashboard';
 				}else {
 					Swal.fire({
   						icon: "error",

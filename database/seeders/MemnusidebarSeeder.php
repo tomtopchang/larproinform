@@ -18,7 +18,7 @@ class MemnusidebarSeeder extends Seeder
         [
             'name' => '首頁',
             'nav' => 0,
-            'item' => '/larproinform/dashboard',
+            'item' => '/dashboard',
             'icon' => 'fa fa-dashboard',
             'sort' => 0,
         ],
@@ -32,21 +32,21 @@ class MemnusidebarSeeder extends Seeder
         [
             'name' => '權限管理',
             'nav' => 2,
-            'item' => '/larproinform/backstage/role',
+            'item' => '/backstage/role',
             'icon' => NULL,
             'sort' => 0,
         ],
         [
             'name' => '帳號管理',
             'nav' => 2,
-            'item' => '/larproinform/backstage/manager',
+            'item' => '/backstage/manager',
             'icon' => NULL,
             'sort' => 0,
         ],
         [
             'name' => '人員基本查詢',
             'nav' => 0,
-            'item' => '/larproinform/backstage/manager',
+            'item' => '/backstage/manager',
             'icon' => 'fa fa-user',
             'sort' => 0,
         ],
@@ -60,14 +60,14 @@ class MemnusidebarSeeder extends Seeder
         [
             'name' => '差勤審核',
             'nav' => 6,
-            'item' => '/larproinform/backstage/Vacation_check',
+            'item' => '/backstage/ｖacation_check',
             'icon' => NULL,
             'sort' => 0,
         ],
         [
             'name' => '請假作業',
             'nav' => 6,
-            'item' => '/larproinform/backstage/Vacation',
+            'item' => '/backstage/ｖcation',
             'icon' => NULL,
             'sort' => 0,
         ]
